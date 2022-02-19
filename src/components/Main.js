@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import WalletInfo from './WalletInfo';
 import caver from '../klaytn/caver';
 
-import jquery from 'jquery';
 
-window.$ = window.jquery = jquery;
 
 class Main extends Component {
     constructor(props) {
@@ -61,7 +59,6 @@ class Main extends Component {
     
     selectTxType = (txType) => this.setState({ txType })
     
-
     render(){
         const { account, balance } = this.state
         return (
