@@ -16,4 +16,4 @@ const WalletInfo = ({ address, balance }) => {
   )
 }
 
-export default WalletInfo
+export default WalletInfo;

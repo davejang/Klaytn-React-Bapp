@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import WalletInfo from './WalletInfo';
 import caver from '../klaytn/caver';
 
-
-
 class Main extends Component {
     constructor(props) {
         super(props)
@@ -13,7 +11,7 @@ class Main extends Component {
           balance: 0,
           network: null,
         }
-      }
+    }
     
     componentDidMount(){
         this.loadAccountInfo()
