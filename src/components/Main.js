@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WalletInfo from './WalletInfo';
+
 import caver from '../klaytn/caver';
 
 class Main extends Component {
@@ -11,11 +12,6 @@ class Main extends Component {
           balance: 0,
           network: null,
         }
-    }
-    
-    componentDidMount(){
-        this.loadAccountInfo()
-        this.setNetworkInfo()
     }
 
     //Kaikas Connect
@@ -47,20 +43,13 @@ class Main extends Component {
         })
     }
     
-    setNetworkInfo = () => {
-        const { klaytn } = window
-        if (klaytn === undefined) return
-    
-        this.setState({ network: klaytn.networkVersion })
-        klaytn.on('networkChanged', () => this.setNetworkInfo(klaytn.networkVersion))
-    }
-    
-    selectTxType = (txType) => this.setState({ txType })
-    
     render(){
         const { account, balance } = this.state
         return (
-            <WalletInfo address={account} balance={balance} />
+          <div>
+            <button onClick={ this.loadAccountInfo }>Connect Wallet</button>
+            <WalletInfo address={account} balance={balance}/>
+          </div>
         );
     }
 }
