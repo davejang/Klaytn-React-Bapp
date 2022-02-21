@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Klaytn-React-Bapp.io/static/css/main.e6c13ad2.css",
-    "main.js": "/Klaytn-React-Bapp.io/static/js/main.890fb598.js",
+    "main.js": "/Klaytn-React-Bapp.io/static/js/main.cdff06d5.js",
     "static/js/787.62fb6c56.chunk.js": "/Klaytn-React-Bapp.io/static/js/787.62fb6c56.chunk.js",
     "index.html": "/Klaytn-React-Bapp.io/index.html",
     "main.e6c13ad2.css.map": "/Klaytn-React-Bapp.io/static/css/main.e6c13ad2.css.map",
-    "main.890fb598.js.map": "/Klaytn-React-Bapp.io/static/js/main.890fb598.js.map",
+    "main.cdff06d5.js.map": "/Klaytn-React-Bapp.io/static/js/main.cdff06d5.js.map",
     "787.62fb6c56.chunk.js.map": "/Klaytn-React-Bapp.io/static/js/787.62fb6c56.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.890fb598.js"
+    "static/js/main.cdff06d5.js"
   ]
 }
