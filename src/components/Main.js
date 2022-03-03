@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import WalletInfo from './WalletInfo';
+import Nav from './Nav';
 
 import caver from '../klaytn/caver';
+
+import '../App.css'
 
 class Main extends Component {
     constructor(props) {
@@ -47,8 +51,18 @@ class Main extends Component {
         const { account, balance } = this.state
         return (
           <div>
-            <button onClick={ this.loadAccountInfo }>Connect Wallet</button>
-            <WalletInfo address={account} balance={balance}/>
+            <header>
+              <Nav/>
+            </header>
+            <section>
+              <div className='container'>
+                <div>
+                <button onClick={ this.loadAccountInfo }>Connect Wallet</button>
+                <WalletInfo address={account} balance={balance}/>
+                hello world!
+                </div>
+              </div>
+            </section>
           </div>
         );
     }
